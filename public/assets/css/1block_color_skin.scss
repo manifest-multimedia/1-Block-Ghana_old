@@ -7,7 +7,12 @@
 }
 
 .theme-blue .sidebar .menu .list a:hover,
-.theme-blue .sidebar .menu .list li.active > :first-child i,
-.theme-blue .sidebar .menu .list li.active > :first-child span {
+.theme-blue .sidebar .menu .list li.active> :first-child i,
+.theme-blue .sidebar .menu .list li.active> :first-child span {
     color: #bd9154;
+}
+
+.l-cyan, .btn-primary  {
+    background: linear-gradient(45deg, #dda04a, #b78746) !important;
+    color: #fff !important;
 }

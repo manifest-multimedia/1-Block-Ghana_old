@@ -1,75 +1,47 @@
-@extends('layouts.auth.head')
+<x-layout.head>
+    <div class="page-header">
+        <x-auth.bg-image />
+        <div class="container">
+            <div class="col-md-12 login-center">
+                <div class="card">
+                    <div class="card-login">
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <div class="header">
+                                <div class="logo-container">
+                                    <img class="form-logo" src="assets/images/logo1.svg" alt="">
+                                   {{--  <h5>Sign Up</h5> --}}
+                                </div>
 
-@section('content')
+                              {{--   <span>Register a new membership</span> --}}
+                            </div>
+                            <x-form.error />
+                            <div class="content">
+                                <x-form.label for="email" value="{{ __('Email Address') }}" />
+                                <x-form.input name="email" placeholder="Email Address" />
 
-<div class="page-header">
-    <div class="page-header-image" style="background-image:url(assets/images/login-background.jpg)"></div>
-    <div class="container">
-        <div class="col-md-12 content-center">
-            <div class="card">
-                <div class="card-plain1">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-                        <div class="header">
-                            <div class="logo-container">
-                                <img class="form-logo" src="assets/images/logo.png" alt="">
-                               {{--  <h5>Sign Up</h5> --}}
+                                <x-form.label for="password" value="{{ __('Password') }}" />
+                                <x-form.input name="password"  type="password" placeholder="New Password" />
+
                             </div>
 
-                          {{--   <span>Register a new membership</span> --}}
-                        </div>
-                        <div class="content">
-                            <x-jet-label for="email" value="{{ __('Email Address') }}" />
-                            <div class="input-group">
-                                <input type="email" id="email" class="form-control" placeholder="Email Address" name="email" :value="old('email')" required>
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-email"></i>
-                                </span>
+                            <div class="footer text-center">
+                                <button type="submit" class="btn l-cyan btn-square btn-lg btn-block waves-effect waves-light">SIGN IN</button>
+                                <h6 class="m-t-20 text-gray-600">
+                                    @if (Route::has('password.request'))
+                                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                                        {{ __('Forgot your password?') }}
+                                    </a>
+                                    @endif
+                            </h6>
+                            <h6 class="m-t-20 text-gray-600"><a class="link" href="{{ route('register')}}">NEW USER?</a></h6>
                             </div>
-
-                            <x-jet-label for="password" value="{{ __('Password') }}" />
-                            <div class="input-group">
-                                <input type="password" id="password" placeholder="Password" class="form-control" name="password" required autocomplete="new-password"/>
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-lock"></i>
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="footer text-center">
-                            <button type="submit" class="btn l-cyan btn-square btn-lg btn-block waves-effect waves-light">SIGN IN</button>
-                            <h6 class="m-t-20 text-gray-600">
-                                @if (Route::has('password.request'))
-                                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                                    {{ __('Forgot your password?') }}
-                                </a>
-                                @endif
-                        </h6>
-                        <h6 class="m-t-20 text-gray-600"><a class="link" href="{{ route('register')}}">NEW USER?</a></h6>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <x-auth.footer />
     </div>
-    <footer class="footer">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#" target="_blank">Contact Us</a></li>
-                    <li><a href="#" target="_blank">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>,
-                <span>Designed by <a href="https://manifestghana.com/" target="_blank">Manifest Multimedia</a></span>
-            </div>
-        </div>
-    </footer>
-</div>
-@endsection
+</x-layout.head>
+

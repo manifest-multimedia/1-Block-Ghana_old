@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
+});
+Route::get('/dashboard', function () {
+    return view('backend.index');
+});
+Route::get('/add-agent', function () {
+    return view('backend.agent.add');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+/* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('backend.index');
-})->name('dashboard');
+})->name('dashboard'); */

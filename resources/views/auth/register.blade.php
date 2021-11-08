@@ -1,102 +1,88 @@
-@extends('layouts.auth.head')
+<x-layout.head>
+    <div class="page-header">
+        <x-auth.bg-image />
+        <div class="container">
+            <div class="content-center col-md-12">
+                <div class="card">
+                    <div class="card-plain1">
 
-@section('content')
-<x-guest-layout>
-<div class="page-header">
-    <div class="page-header-image" style="background-image:url(assets/images/login-background.jpg)"></div>
-    <div class="container">
-        <div class="col-md-12 content-center">
-            <div class="card">
-                <div class="card-plain1">
-                    <form class="form" method="POST" action="{{ route('register') }}">
-                        @csrf
-                        <div class="header">
-                            <div class="logo-container">
-                                <img class="form-logo" src="assets/images/logo.png" alt="">
-                               {{--  <h5>Sign Up</h5> --}}
+                        <form class="form" method="POST" action="{{ route('register') }}">
+                            @csrf
+                            <div class="pb-2 mb-0 header">
+                                <div class="logo-container">
+                                    <img class="form-logo" src="assets/images/logo.png" alt="">
+
+                                </div>
+                                <div class="mt-4 register-title">
+                                    <h5>Sign Up</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-5 col">
+                                    <h4 class="my-0">To list on this platform, kindly fill out the form below and our agents will get back to you.</h4>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('First Name') }}" />
+                                        <x-form.input name="firstname" placeholder="First Name" />
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('Last Name') }}" />
+                                        <x-form.input name="lastname" placeholder="Last Name" />
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('Business Name') }}" />
+                                        <x-form.input name="business_name" placeholder="Business Name" />
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('Business Type') }}" />
+                                        <x-form.input name="business_type" placeholder="Business Type" />
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('Email Address') }}" />
+                                        <x-form.input name="email" placeholder="Email Address" />
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <x-jet-label value="{{ __('Physical Address') }}" />
+                                        <x-form.input name="physical_address" placeholder="Physical Address" />
+                                    </div>
+                                </div>
                             </div>
 
-                          {{--   <span>Register a new membership</span> --}}
-                        </div>
-                        <div class="content">
-                            <x-jet-label for="name" value="{{ __('Full Name') }}" />
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Firstname Lastname" name="name" :value="old('name')" required autofocus autocomplete="name">
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-account-circle"></i>
-                                </span>
+                            @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
+                                <div class="checkbox">
+                                    <input id="terms" name="terms" type="checkbox">
+                                    <label for="terms">
+                                        I read and agree to the <a href="javascript:void(0);">terms of usage</a>
+                                    </label>
+                                </div>
+                            @endif
+                            <div class="text-center footer">
+                                <button type="submit"
+                                    class="btn l-cyan btn-square btn-lg btn-block waves-effect waves-light">SUBMIT</button>
+                                <h6 class="text-gray-600 m-t-20"><a class="link"
+                                        href="{{ route('login') }}">ALREADY REGISTERED?</a></h6>
                             </div>
-                            <x-jet-label for="business_type" value="{{ __('Business Type') }}" />
-                            <div class="input-group">
-                                <input type="text" id="business_type" class="form-control" placeholder="Business Type" name="business_type" :value="old('business_type')" required autocomplete="business_type">
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-email"></i>
-                                </span>
-                            </div>
-                            <x-jet-label for="email" value="{{ __('Email Address') }}" />
-                            <div class="input-group">
-                                <input type="email" id="email" class="form-control" placeholder="Email Address" name="email" :value="old('email')" required>
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-email"></i>
-                                </span>
-                            </div>
-                            <x-jet-label for="physical_address" value="{{ __('Physical Address') }}" />
-                            <div class="input-group">
-                                <input type="text" id="physical_address" class="form-control" placeholder="Physical Address">
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-map"></i>
-                                </span>
-                            </div>
-                            <x-jet-label for="password" value="{{ __('Password') }}" />
-                            <div class="input-group">
-                                <input type="password" id="password" placeholder="Password" class="form-control" name="password" required autocomplete="new-password"/>
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-lock"></i>
-                                </span>
-                            </div>
-                            <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                            <div class="input-group">
-                                <input type="password" id="password_confirmation" placeholder="Confirm Password" class="form-control" name="password_confirmation" required autocomplete="new-password"/>
-                                <span class="input-group-addon">
-                                    <i class="zmdi zmdi-lock"></i>
-                                </span>
-                            </div>
-                        </div>
-                        @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                        <div class="checkbox">
-                            <input id="terms" name="terms" type="checkbox">
-                            <label for="terms">
-                                    I read and agree to the <a href="javascript:void(0);">terms of usage</a>
-                            </label>
-                        </div>
-                        @endif
-                        <div class="footer text-center">
-                            <button type="submit" class="btn l-cyan btn-square btn-lg btn-block waves-effect waves-light">SIGN UP</button>
-                            <h6 class="m-t-20 text-gray-600"><a class="link" href="{{ route('login')}}">ALREADY REGISTERED?</a></h6>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <x-auth.footer />
     </div>
-    <footer class="footer">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#" target="_blank">Contact Us</a></li>
-                    <li><a href="#" target="_blank">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>,
-                <span>Designed by <a href="https://manifestghana.com/" target="_blank">Manifest Multimedia</a></span>
-            </div>
-        </div>
-    </footer>
-</div>
-</x-guest-layout>
-@endsection
+</x-layout.head>

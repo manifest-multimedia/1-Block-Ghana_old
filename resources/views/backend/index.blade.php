@@ -1,7 +1,7 @@
-@extends('layouts.dashboard.app')
-@section('dashboard')
-<!-- Top Bar -->
-@include('backend.header')
-@include('backend.sidebar')
-@include('backend.content')
-@endsection
+<x-backend.app >
+    <!-- Top Bar -->
+    <x-backend.header />
+    <x-backend.sidebar />
+    <x-backend.main />
+</x-backend.app>
+
