@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Crud;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,8 @@ Route::get('/dashboard', function () {
 Route::get('/add-agent', function () {
     return view('backend.agent.add');
 });
+
+Route::get('users', Crud::class);
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('backend.index');
