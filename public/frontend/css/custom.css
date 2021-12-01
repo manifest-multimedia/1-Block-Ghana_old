@@ -1,0 +1,153 @@
+.header.header2 .top-header {
+    background-color: #b78746;
+}
+
+.menu-block > a, .search-section .section-header a.btn {
+    background-color: #b78746;
+}
+.menu-block .navbar-default .navbar-nav li > a:hover, .menu-block .navbar-default .navbar-nav li > a:focus {
+    color: #b78746;
+}
+
+.header.header2 .top-header {
+    background-color: #745022;
+}
+
+.page-content {
+    padding-bottom: 90px;
+    overflow: hidden;
+    max-width: calc(1200px + (2rem * 2));
+    margin: auto;
+}
+
+.logo-block {
+    width: 90px;
+    margin-left: 30px;
+}
+
+.slider-section.slider-section2 .carousel-caption {
+    display: none;
+}
+
+.section-header h3, .section-header p, .slider-section3 .carousel-caption > h4, .slider-section3 .carousel-caption > h3, .search-section .section-header a.btn, .featured-section .section-header p, .featured-section .section-header h3, .rent-block .property-images-box > span, .sale-block .property-images-box > span, .property-listing-box.rent-block span, .property-listing-box.sale-block span, .featured-section2 .col-md-12 > a, .property-guide-section .section-header > p, .property-guide h3, .property-guide h3 > a, .add-property > a, .page-title h2, .widget-search .widget-title, .widget-property-featured h2, .contact-feedback-form h3, .contact-address h3, .single-property-details > h3, .general-amenities h3, .property-direction h3, .agent-header h5, .agent-detail-box .about-agent h5, .other-properties > h3, .agent-listing-detail h4, .blog-listing .entry-title, .blog-listing .entry-cover span span, .related-post a, .entry-author h6, .comments-area > h3 {
+    text-transform: none;
+}
+
+.search-section {
+    background-color: #f2f4f5;
+    padding: 60px 0;
+}
+
+.navbar-soft .navbar-brand img {
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: auto;
+    width: 90px;
+    padding: 0 10px;
+}
+
+.fixed-top .navbar-brand img:last-child, .navbar-custom .navbar-brand img:last-child {
+    display: block;
+    width: 90px;
+}
+
+.topbar {
+    background: #b78746;
+   /*  background: linear-gradient(90deg, #0a0494 0%, #3454d1 61%, #009fff 100%); */
+   background: linear-gradient(227deg, #dda04a, #b78746) !important;
+    padding: 0;
+    min-height: 50px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #b78746;
+    border-color: #b78746;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #cf9441;
+    border-color: #cf9441;
+}
+
+.cta-v1 {
+    background: linear-gradient(227deg, #dda04a, #b78746) !important;
+}
+
+.bg-theme-footer {
+    background-image: url(../images/bg18.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.bg-theme-v6 {
+    background-image: url(../images/bg18.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.bg-theme-v7 {
+    background-image: url(../images/bgoverlay3.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.bg__footer-bottom-v1 span a, .bg__footer-bottom span a {
+    color: #dda04a;
+    text-transform: uppercase;
+}
+
+.card__image-filter .filterizr-filter .btn-filter:hover, .card__image-filter .filterizr-filter .filtr-active.btn-filter {
+    background-color: #dda04a;
+    color: #fff;
+}
+
+.carousel-caption.banner__slide-overlay {
+    display: none !important;
+}
+
+.slider-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: calc(1050px + (2rem * 2));
+    margin: auto;
+    border-radius: 5px;
+    height: 600px;
+    width: 100%;
+}
+
+
+.home__video-area .play-video, .home__video-area .play-video-1 {
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #b78746;
+    z-index: 1;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    transform-origin: center center;
+    border-radius: 50%;
+    -ms-box-shadow: 0 5px 10px 0 rgba(255,255,255,0.1);
+    -o-box-shadow: 0 5px 10px 0 rgba(255,255,255,0.1);
+    box-shadow: 0 5px 10px 0 rgb(255 255 255 / 10%);
+}

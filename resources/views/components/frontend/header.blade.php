@@ -1,91 +1,101 @@
-<nav class="navbar">
-    <div class="col-12">
-        <div class="navbar-header">
-            <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="index.html"><img src="{{asset('assets/images/logo.png')}}" width="50" alt="1 Block Ghana"><span class="m-l-10">1 Block Ghana</span></a>
-        </div>
-        <ul class="nav navbar-nav navbar-left">
-            {{-- <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
-            <li class="hidden-sm-down">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <span class="input-group-addon">
-                        <i class="zmdi zmdi-search"></i>
-                    </span>
+<!-- NAVBAR TOP -->
+<div class="topbar d-none d-sm-block">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <div class="topbar-left">
+                    <div class="text-white topbar-text">
+                        <a class="text-white" href="mailto:info@1blockghana.com">info@1blockghana.com</a>
+                    </div>
                 </div>
-            </li> --}}
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            {{-- <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
-                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right slideDown">
-                    <li class="header">NOTIFICATIONS</li>
-                    <li class="body">
-                        <ul class="menu list-unstyled">
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-blue"><i class="zmdi zmdi-account"></i></div>
-                                <div class="menu-info">
-                                    <h4>8 New Members joined</h4>
-                                    <p><i class="zmdi zmdi-time"></i> 14 mins ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-amber"><i class="zmdi zmdi-shopping-cart"></i></div>
-                                <div class="menu-info">
-                                    <h4>4 Sales made</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> 22 mins ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-red"><i class="zmdi zmdi-delete"></i></div>
-                                <div class="menu-info">
-                                    <h4><b>Nancy Doe</b> Deleted account</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> 3 hours ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-green"><i class="zmdi zmdi-edit"></i></div>
-                                <div class="menu-info">
-                                    <h4><b>Nancy</b> Changed name</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> 2 hours ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-grey"><i class="zmdi zmdi-comment-text"></i></div>
-                                <div class="menu-info">
-                                    <h4><b>John</b> Commented your post</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> 4 hours ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-purple"><i class="zmdi zmdi-refresh"></i></div>
-                                <div class="menu-info">
-                                    <h4><b>John</b> Updated status</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> 3 hours ago </p>
-                                </div>
-                                </a> </li>
-                            <li> <a href="javascript:void(0);">
-                                <div class="icon-circle bg-light-blue"><i class="zmdi zmdi-settings"></i></div>
-                                <div class="menu-info">
-                                    <h4>Settings Updated</h4>
-                                    <p> <i class="zmdi zmdi-time"></i> Yesterday </p>
-                                </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer"> <a href="javascript:void(0);">View All Notifications</a> </li>
-                </ul>
-            </li>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="list-unstyled topbar-right">
+                    <ul class="topbar-link">
+                        <li><a href="#" title="">About Us</a></li>
+                        <li><a href="#" title="">Contact Us</a></li>
+                        <li><a href="#" title="">Login / Register</a></li>
+                    </ul>
+                    <ul class="topbar-sosmed">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END NAVBAR TOP -->
+<nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="frontend/images/logo.png" alt="" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav99">
+            <ul class="mx-auto navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Categories </a>
+                    <ul class="dropdown-menu animate fade-up">
+                        <li><a class="dropdown-item" href="#">Houses for sale</a>
+                        <li><a class="dropdown-item" href="#">Houses for rent </a>
+                        <li><a class="dropdown-item" href="#"> Apartments for sale  </a>
+                        <li><a class="dropdown-item" href="#"> Gated communities   </a>
+                        <li><a class="dropdown-item" href="#">Hotels  </a>
+                        <li><a class="dropdown-item" href="#">  Luxury apartments  </a>
+                        <li><a class="dropdown-item" href="#">New and ongoing developments   </a>
+                        <li><a class="dropdown-item" href="#">  Commercial properties </a>
+                    </ul>
+                </li>
 
-            <li>
-                <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
-            </li> --}}
+                <li class="nav-item"><a class="nav-link" href="#"> About Us </a></li>
 
-            <li><a href="/login" class="mega-menu" data-close="true"><i class="zmdi zmdi-account"></i><span class="ml-2">Login</span></a></li>
-            <li><a href="/register" class="mega-menu" data-close="true"><i class="zmdi zmdi-account"></i><span class="ml-2">Register</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"> Contact Us </a></li>
+                <li class="nav-item"><a class="nav-link" href="#"> Ghana on Tapes </a></li>
+            </ul>
 
-        </ul>
+
+            <!-- Search bar.// -->
+            <ul class="navbar-nav">
+                <li>
+                    <a href="/register" class="btn btn-primary text-capitalize">
+                        <i class="mr-1 fa fa-plus-circle"></i> add listing</a>
+                </li>
+            </ul>
+            <!-- Search content bar.// -->
+            <div class="top-search navigation-shadow">
+                <div class="container">
+                    <div class="input-group ">
+                        <form action="#">
+
+                            <div class="mt-3 row no-gutters">
+                                <div class="col">
+                                    <input class="form-control border-secondary border-right-0 rounded-0"
+                                        type="search" value="" placeholder="Search " id="example-search-input4">
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+                                        href="/search-result.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Search content bar.// -->
+        </div> <!-- navbar-collapse.// -->
     </div>
 </nav>
