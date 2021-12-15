@@ -11,7 +11,7 @@
 
  <x-frontend.about />
 
- <x-frontend.mission />
+<x-frontend.explore-section />
 
 
  <x-frontend.popular-cities />

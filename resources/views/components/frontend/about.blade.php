@@ -5,9 +5,9 @@
                 <div class="col-lg-6">
                     <div class="title__leading">
                         <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
-                        <h2 class="text-capitalize">About 1Block Ghana</h2>
+                        <h2 class="text-capitalize">Our Mission</h2>
                         <p>
-                            1Block Ghana is a listing site for real estate in Ghana. The first step in selling your property is to get a valuation from local experts. 
+                            1Block Ghana is a listing site for real estate in Ghana. The first step in selling your property is to get a valuation from local experts.
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt

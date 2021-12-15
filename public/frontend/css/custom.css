@@ -151,3 +151,53 @@
     -o-box-shadow: 0 5px 10px 0 rgba(255,255,255,0.1);
     box-shadow: 0 5px 10px 0 rgb(255 255 255 / 10%);
 }
+
+.recent__property-carousel .owl-nav button {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    font-size: 22px;
+    color: #fff !important;
+    background: #b78746!important;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0 !important;
+}
+
+.card__image-hover .listing-badges .featured{
+    background-color: #b78746;
+    font-family: "Open Sans",sans-serif;
+    float: left;
+    transform: rotate(-45deg);
+    left: -67px;
+    top: 17px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 0;
+    padding: 6px;
+    font-weight: normal;
+}
+
+.recent__property-carousel .owl-nav button:hover {
+    background: #dfaa15 !important;
+}
+
+.card__hidden-content{
+position: relative;
+width: 100%;
+background-color: #b78746;
+color: #fff;
+height: 0px;
+transition: all 0.4s;
+margin: 0;
+list-style: none;
+font-size: 14px;
+display: flex;
+overflow: hidden;
+padding: 0 14px;
+}

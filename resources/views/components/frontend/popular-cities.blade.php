@@ -4,7 +4,7 @@
             <div class="mx-auto col-md-8 col-lg-6">
                 <div class="title__head">
                     <h2 class="text-center text-capitalize">
-                        popular city
+                        popular cities
                     </h2>
                     <p class="text-center text-capitalize">Find Properties In These Cities.</p>
                 </div>
