@@ -6,30 +6,34 @@
                 <div class="user-info">
                     <div class="image"><a href="profile.html"><img src="assets/images/gabe.jpg" alt="User"></a></div>
                     <div class="detail">
-                        <h4>Gabriel</h4>
-                        <small>admin</small>
+                    @auth
+                        <h4>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</h4>
+                        <small>{{Str::ucfirst(Auth::user()->role)}}</small>
+                    @endauth
+                        
                     </div>
-                    <a href="#" title="Events"><i class="zmdi zmdi-calendar"></i></a>
+                    {{-- <a href="#" title="Events"><i class="zmdi zmdi-calendar"></i></a>
                     <a href="#" title="Inbox"><i class="zmdi zmdi-email"></i></a>
                     <a href="#" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a>
                     <a href="#" title="Chat App"><i class="zmdi zmdi-comments"></i></a>
-                    <a href="#" title="Sign out"><i class="zmdi zmdi-power"></i></a>
+                    <a href="#" title="Sign out"><i class="zmdi zmdi-power"></i></a> --}}
+                    <br />
                 </div>
             </li>
             <li class="header">MAIN</li>
-            <li class="active open"><a href="#"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Subscription</span> </a>
+            <li class="active open"><a href="/dashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Packages</span> </a>
                 <ul class="ml-menu">
-                    <li><a href="#">Free</a></li>
-                    <li><a href="#">Intermediate</a></li>
-                    <li><a href="#">Premium</a></li>
+                    <li><a href="/packages">List Packages</a></li>
+                    <li><a href="/package/add">Create Package</a></li>
                 </ul>
             </li>
-            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Property</span> </a>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Properties</span> </a>
                 <ul class="ml-menu">
-                    <li><a href="#">Property List</a></li>
-                    <li><a href="#">Add Property</a></li>
-                    <li><a href="#">Property Detail</a></li>
+                    <li><a href="/properties">List Properties</a></li>
+                   {{--  <li><a href="/properties/grid">Properties Grid view</a></li> --}}
+                    <li><a href="/property/add">Add Property</a></li>
+                    <li><a href="property/details">Property Detail</a></li>
                 </ul>
             </li>
             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Types</span> </a>
@@ -49,7 +53,7 @@
         </div>
     </div>
 
-    <div class="menu">
+    {{-- <div class="menu">
         <div class="list">
             <li class="header">Extra</li>
             <li>
@@ -71,5 +75,5 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </div> --}}
 </aside>

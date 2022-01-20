@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="{{ asset('assets/css/color_skins.css')}}">
         <link rel="stylesheet" href="{{ asset('assets/css/1block_body.scss')}}">
         <link rel="stylesheet" href="{{ asset('assets/css/1block_dashboard.css')}}">
+
+        @livewireStyles
     </head>
     <body class="theme-blue">
         <!-- Top Bar -->
@@ -42,5 +44,7 @@
 
 <script src="{{ asset('assets/bundles/mainscripts.bundle.js')}}"></script>
 <script src="{{ asset('assets/js/pages/index.js')}}"></script>
+
+@livewireScripts
 </body>
 </html>

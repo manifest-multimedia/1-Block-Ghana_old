@@ -9,19 +9,19 @@
                         <h4>Gabriel</h4>
                         <small>admin</small>
                     </div>
-                    <a href="#" title="Events"><i class="zmdi zmdi-calendar"></i></a>
+                    {{-- <a href="#" title="Events"><i class="zmdi zmdi-calendar"></i></a>
                     <a href="#" title="Inbox"><i class="zmdi zmdi-email"></i></a>
                     <a href="#" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a>
                     <a href="#" title="Chat App"><i class="zmdi zmdi-comments"></i></a>
-                    <a href="#" title="Sign out"><i class="zmdi zmdi-power"></i></a>
+                    <a href="#" title="Sign out"><i class="zmdi zmdi-power"></i></a> --}}
                 </div>
             </li>
             <li class="header">MAIN</li>
             <li class="active open"><a href="#"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Subscription</span> </a>
                 <ul class="ml-menu">
-                    <li><a href="#">Free</a></li>
-                    <li><a href="#">Intermediate</a></li>
+                    <li><a href="#">List Packages</a></li>
+                    <li><a href="#">Create Package</a></li>
                     <li><a href="#">Premium</a></li>
                 </ul>
             </li>

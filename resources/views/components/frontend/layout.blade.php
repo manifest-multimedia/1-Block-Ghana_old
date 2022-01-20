@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Rethouse - Real Estate HTML Template">
+    <meta name="description" content="1Block Ghana - Real Estate Platform">
     <meta name="keywords" content="Real Estate, Property, Directory Listing, Marketing, Agency" />
-    <meta name="author" content="mardianto - retenvi.com">
+    <meta name="author" content="Erob Osei - 1blockghana.com">
     <title>1Block Ghana</title>
 
     <!-- Facebook and Twitter integration -->

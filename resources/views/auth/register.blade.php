@@ -6,7 +6,13 @@
                 <div class="card">
                     <div class="card-plain1">
 
-                        <form class="form" method="POST" action="{{ route('register') }}">
+                        @if ($message = Session::get('success'))
+                            <div class="alert alert-success alert-block">
+                                <button type="button" data-dismiss="alert" class="close">x</button>
+                                <strong>{{ $message }}</strong>
+                            </div>
+                        @endif
+                        <form class="form" method="POST" action="{{ route('signup.request') }}">
                             @csrf
                             <div class="pb-2 mb-0 header">
                                 <div class="logo-container">

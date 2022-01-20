@@ -19,10 +19,19 @@ class DatabaseSeeder extends Seeder
             'firstname' => 'Gabriel',
             'lastname' => 'Abiah',
            // 'user_role' => 'doctor',
-           // 'username' => 'Gabe',
+            'role' => 'agent',
             'email' => 'gabriel@manifestghana.com',
             'mobile' => '0546747672',
             'password' => bcrypt('0546747672'),
         ],);
+        $user = User::factory()->create([
+            'firstname' => 'Erob',
+            'lastname' => 'Osei',
+           // 'user_role' => 'doctor',
+            'role' => 'admin',
+            'email' => 'info@1blockghana.com',
+            'mobile' => '0546747672',
+            'password' => bcrypt('1blockghana'),
+        ]);
     }
 }

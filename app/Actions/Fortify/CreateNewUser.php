@@ -26,9 +26,9 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'firstname' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string', 'max:255'],
-            'physical_address' => ['required', 'string', 'max:255'],
+            /* 'physical_address' => ['required', 'string', 'max:255'],
             'business_name' => ['required','unique:businesses', 'string', 'max:255'],
-            'business_type' => ['required','string', 'max:255'],
+            'business_type' => ['required','string', 'max:255'], */
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
@@ -37,17 +37,19 @@ class CreateNewUser implements CreatesNewUsers
         return DB::transaction(function () use ($input) {
             return tap(
                 User::create([
-                'name' => $input['name'],
+                'firstname' => $input['firstname'],
+                'lastname' => $input['lastname'],
+                'physical_address' => 'Ghana',
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
                 $this->createTeam($user);
             },
 
-            Business::create([
-                'name' => $input['business_name'],
-                'category_id' => $input['business_type'],
-            ])
+           /*  Business::create([
+                'name' => '1Block Ghana',
+                'category_id' => 2,
+            ]) */
         );
         });
     }

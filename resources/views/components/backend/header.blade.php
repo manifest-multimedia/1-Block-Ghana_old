@@ -82,8 +82,14 @@
             <li>
                 <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
             </li>
-            <li><a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
-            <li class=""><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+            <li>
+                <form method="post" action="logout">
+                    @csrf
+                    <button type="submit" class="btn-logout"><a class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a> </button>
+                    </li>
+                </form>
+
+
         </ul>
     </div>
 </nav>

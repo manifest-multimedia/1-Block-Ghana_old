@@ -14,7 +14,7 @@
                     <ul class="topbar-link">
                         <li><a href="#" title="">About Us</a></li>
                         <li><a href="#" title="">Contact Us</a></li>
-                        <li><a href="#" title="">Login / Register</a></li>
+                        <li><a href="login" title="">Login / Register</a></li>
                     </ul>
                     <ul class="topbar-sosmed">
                         <li>
@@ -35,7 +35,7 @@
 <!-- END NAVBAR TOP -->
 <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="frontend/images/logo.png" alt="" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
@@ -43,24 +43,26 @@
         </button>
         <div class="collapse navbar-collapse" id="main_nav99">
             <ul class="mx-auto navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
+                <li class="nav-item"><a class="nav-link" href="/"> Home </a></li>
+                <li class="nav-item"><a class="nav-link" href="/about-us"> About Us </a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Categories </a>
+                    <a class="nav-link dropdown-toggle" href="/listing" data-toggle="dropdown"> Categories </a>
                     <ul class="dropdown-menu animate fade-up">
-                        <li><a class="dropdown-item" href="#">Houses for sale</a>
-                        <li><a class="dropdown-item" href="#">Houses for rent </a>
-                        <li><a class="dropdown-item" href="#"> Apartments for sale  </a>
-                        <li><a class="dropdown-item" href="#"> Gated communities   </a>
-                        <li><a class="dropdown-item" href="#">Hotels  </a>
-                        <li><a class="dropdown-item" href="#">  Luxury apartments  </a>
-                        <li><a class="dropdown-item" href="#">New and ongoing developments   </a>
-                        <li><a class="dropdown-item" href="#">  Commercial properties </a>
+                        <li><a class="dropdown-item" href="/listing">Houses for sale</a>
+                        <li><a class="dropdown-item" href="/listing">Houses for rent </a>
+                        <li><a class="dropdown-item" href="/listing"> Apartments for sale</a>
+                        <li><a class="dropdown-item" href="/listing"> Gated communities</a>
+                        <li><a class="dropdown-item" href="/listing">Hotels</a>
+                        <li><a class="dropdown-item" href="/listing">  Luxury apartments  </a>
+                        <li><a class="dropdown-item" href="/listing">New and ongoing developments   </a>
+                        <li><a class="dropdown-item" href="/listing">  Commercial properties </a>
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#"> About Us </a></li>
 
-                <li class="nav-item"><a class="nav-link" href="#"> Contact Us </a></li>
+                {{-- <li class="nav-item"><a class="nav-link" href="/listing"> Listing</a></li> --}}
+
+                <li class="nav-item"><a class="nav-link" href="/contact-us"> Contact Us </a></li>
                 <li class="nav-item"><a class="nav-link" href="#"> Ghana on Tapes </a></li>
             </ul>
 
