@@ -23,6 +23,9 @@ Route::get('/registerme', function () {
 Route::get('/', function () {
     return view('frontend.homepage');
 });
+Route::get('/request-status', function () {
+    return view('frontend.message');
+})->name('request.status');
 
 Route::get('/listing', function () {
     return view('frontend.listing');

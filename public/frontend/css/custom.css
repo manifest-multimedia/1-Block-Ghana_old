@@ -269,3 +269,7 @@ a,.tabs__custom-v2 .nav-pills .list-inline-item .title-text {
 .single__detail-features .list-unstyled.icon-checkbox li::before {
     color: #b78746;
 }
+
+section.home__message {
+    background: #eee;
+}

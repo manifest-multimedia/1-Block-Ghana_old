@@ -747,7 +747,7 @@
                             <div class="single__detail-features-video">
                                 <figure class=" mb-0">
                                     <div class="home__video-area text-center">
-                                        <img src="/frontend/images/1920x1080.jpg" alt="" class="img-fluid">
+                                        <img src="/frontend/images/gallery.jpg" alt="" class="img-fluid">
                                         <a href="https://youtu.be/dQtLx6dsbcI" class="play-video-1 ">
                                             <i class="icon fa fa-play text-white"></i>
                                         </a>
@@ -1482,13 +1482,13 @@
                             <div class="card__image">
                                 <div class="card__image-header h-250">
                                     <div class="ribbon text-capitalize">featured</div>
-                                    <img src="/frontend/images/gallery23.jpg" alt="" class="img-fluid w100 img-transition">
+                                    <img src="/frontend/images/gallery23.png" alt="" class="img-fluid w100 img-transition">
                                     <div class="info"> for sale</div>
                                 </div>
                                 <div class="card__image-body">
                                     <span class="badge badge-primary text-capitalize mb-2">house</span>
                                     <h6 class="text-capitalize">
-                                        <a href="#">Family Home For Sale</a>
+                                        <a href="#">Family Home For Sale1</a>
                                     </h6>
 
                                     <p class="text-capitalize">

@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MailtrapExample extends Mailable
+class MailtrapAdmin extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -41,6 +41,6 @@ class MailtrapExample extends Mailable
     */
 
      return $this->from($sender_email, $sender_name)
-     ->subject($subject)->view('mail.dynamic_email')->with('data', $this->data);
+     ->subject($subject)->view('mail.client_info')->with('data', $this->data);
     }
 }
