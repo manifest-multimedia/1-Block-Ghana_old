@@ -120,69 +120,16 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="slider__image__detail-large-one">
-                            <img src="/frontend/images/gallery5.jpg" alt="" class="img-fluid w-100 img-transition">
-                            <div class="description">
-                                <figure>
-                                    <img src="/frontend/images/80x80.jpg" alt="" class="img-fluid">
-                                </figure>
-                                <span class="badge badge-primary text-capitalize mb-2">house</span>
-                                <div class="price">
-                                    <h5 class="text-capitalize">$13,000/mo</h5>
+                        <div class="single__detail-features-video">
+                            <figure class=" mb-0">
+                                <div class="home__video-area text-center">
+                                    <img src="/frontend/images/gallery7.jpg" alt="" class="img-fluid">
+                                    <a href="https://youtu.be/dQtLx6dsbcI" class="play-video-1 ">
+                                        <i class="icon fa fa-play text-white"></i>
+                                    </a>
                                 </div>
-                                <h4 class="text-capitalize">Luxury Family Home</h4>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-large-one">
-                            <img src="/frontend/images/1920x1080.jpg" alt="" class="img-fluid w-100 img-transition">
-                            <div class="description">
-                                <figure>
-                                    <img src="/frontend/images/80x80.jpg" alt="" class="img-fluid">
-                                </figure>
-                                <span class="badge badge-primary text-capitalize mb-2">house</span>
-                                <div class="price">
-                                    <h5 class="text-capitalize">$13,000/mo</h5>
-                                </div>
-                                <h4 class="text-capitalize">Luxury Family Home</h4>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-large-one">
-                            <img src="/frontend/images/gallery6.jpg" alt="" class="img-fluid w-100 img-transition">
-                            <div class="description">
-                                <figure>
-                                    <img src="/frontend/images/80x80.jpg" alt="" class="img-fluid">
-                                </figure>
-                                <span class="badge badge-primary text-capitalize mb-2">house</span>
-                                <div class="price">
-                                    <h5 class="text-capitalize">$13,000/mo</h5>
-                                </div>
-                                <h4 class="text-capitalize">Luxury Family Home</h4>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-large-one">
-                            <img src="/frontend/images/gallery7.jpg" alt="" class="img-fluid w-100 img-transition">
-                            <div class="description">
-                                <figure>
-                                    <img src="/frontend/images/80x80.jpg" alt="" class="img-fluid">
-                                </figure>
-                                <span class="badge badge-primary text-capitalize mb-2">house</span>
-                                <div class="price">
-                                    <h5 class="text-capitalize">$13,000/mo</h5>
-                                </div>
-                                <h4 class="text-capitalize">Luxury Family Home</h4>
-                                <!-- <p class="text-uppercase">
-                166 welling street, collingwood, vic 3066
-            </p> -->
-                            </div>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -216,276 +163,16 @@
                     <div class="item">
                         <div class="slider__image__detail-thumb-one">
                             <img src="/frontend/images/gallery7.jpg" alt="" class="img-fluid w-100 img-transition">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-thumb-one">
-                            <img src="/frontend/images/gallery.jpg" alt="" class="img-fluid w-100 img-transition">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-thumb-one">
-                            <img src="/frontend/images/gallery1.jpg" alt="" class="img-fluid w-100 img-transition">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="slider__image__detail-thumb-one">
-                            <img src="/frontend/images/gallery8.jpg" alt="" class="img-fluid w-100 img-transition">
+                                    <a href="https://youtu.be/dQtLx6dsbcI" class="play-video-12 ">
+                                        <i class="icon fa fa-play text-white"></i>
+                                    </a>
                         </div>
                     </div>
                 </div>
                 <!-- END SLIDER IMAGE DETAIL -->
             </div>
             <div class="col-lg-4 pt-5">
-                <!-- FORM FILTER -->
-                <div class="products__filter mb-30">
-                    <div class="products__filter__group">
-                        <div class="products__filter__header">
 
-                            <h5 class="text-center text-capitalize">property filter</h5>
-                        </div>
-                        <div class="products__filter__body">
-                            <div class="form-group">
-
-                                <select class="wide select_option">
-                                    <option data-display="Property Status">Property Status</option>
-                                    <option>For Sale</option>
-                                    <option>For Rent</option>
-
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="wide select_option">
-                                    <option data-display="Property Type">Property Type</option>
-                                    <option>Residential</option>
-                                    <option>Commercial</option>
-                                    <option>Land</option>
-                                    <option>Luxury</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="wide select_option">
-                                    <option data-display="Area From">Area From </option>
-                                    <option>1500</option>
-                                    <option>1200</option>
-                                    <option>900</option>
-                                    <option>600</option>
-                                    <option>300</option>
-                                    <option>100</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="wide select_option">
-                                    <option data-display="Locations">Locations</option>
-                                    <option>Accra</option>
-                                    <option>Tema</option>
-                                    <option>Ho</option>
-                                    <option>Cape Coast</option>
-                                    <option>Kumasi</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="wide select_option">
-                                    <option data-display="Bedrooms">Bedrooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <select class="wide select_option">
-                                        <option data-display="Bathrooms">Bathrooms</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-
-                                    </select>
-                                </div>
-                            </div>
-                            {{-- <div class="form-group">
-                                <label class="mb-3">Price range</label>
-                                <div class="filter__price">
-                                    <input class="price-range" type="text" name="my_range" value="" />
-                                </div>
-                            </div> --}}
-
-                           {{--  <div class="form-group mb-0 mt-2">
-
-                                <a class="btn btn-outline-primary btn-block text-capitalize advanced-filter"
-                                    data-toggle="collapse" href="#multiCollapseExample1"
-                                    aria-controls="multiCollapseExample1"><i class="fa fa-plus-circle"></i> advanced
-                                    filter
-                                </a>
-
-                                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                    <div class="advancedfilter">
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox2" type="checkbox">
-                                            <label for="checkbox2" class="label-brand text-capitalize">
-                                                Air Conditioning
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3" class="label-brand text-capitalize">
-                                                Swiming Pool
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox4" type="checkbox">
-                                            <label for="checkbox4" class="label-brand text-capitalize">
-                                                Central Heating
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox5" type="checkbox">
-                                            <label for="checkbox5" class="label-brand text-capitalize">
-                                                Spa & Massage
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox6" type="checkbox">
-                                            <label for="checkbox6" class="label-brand text-capitalize">
-                                                Pets Allow
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox7" type="checkbox">
-                                            <label for="checkbox7" class="label-brand text-capitalize">
-                                                Air Conditioning
-                                            </label>
-
-                                        </div>
-
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox8" type="checkbox">
-                                            <label for="checkbox8" class="label-brand text-capitalize">
-                                                Gym
-                                            </label>
-
-                                        </div>
-
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox9" type="checkbox">
-                                            <label for="checkbox9" class="label-brand text-capitalize">
-                                                Alarm
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox10" type="checkbox">
-                                            <label for="checkbox10" class="label-brand text-capitalize">
-                                                Window Covering
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox11" type="checkbox">
-                                            <label for="checkbox11" class="label-brand text-capitalize">
-                                                Free WiFi
-                                            </label>
-
-                                        </div>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="checkbox12" type="checkbox">
-                                            <label for="checkbox12" class="label-brand text-capitalize">
-                                                Car Parking
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
-                        </div>
-                        <div class="products__filter__footer">
-                            <div class="form-group mb-0">
-                                <button class="btn btn-primary text-capitalize btn-block"><i
-                                        class="fa fa-search ml-1"></i> search
-                                    property </button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END FORM FILTER -->
-                <!-- FORM FILTER -->
-                {{-- <div class="products__filter mb-30">
-                    <div class="products__filter__group">
-                        <div class="products__filter__header">
-
-                            <h5 class="text-center text-capitalize">simulation calculator </h5>
-                        </div>
-                        <div class="products__filter__body">
-                            <div class="form-group">
-                                <label>Sale Price</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="$130.000">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Down Payment</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="$6.000">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Long Term (Years)</label>
-                                <select class="select_option wide">
-
-                                    <option value="1">10</option>
-                                    <option value="2">15</option>
-                                    <option value="3">20</option>
-                                    <option value="4">25</option>
-                                </select>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label>Interest Rate</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">%</span>
-
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="10%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products__filter__footer">
-                            <div class="form-group mb-0">
-                                <button class="btn btn-primary text-capitalize btn-block"> calculate
-                                    <i class="fa fa-calculator ml-1"></i>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
- --}}
-                <!-- END FORM FILTER -->
                 <div class="sticky-top">
                     <!-- PROFILE AGENT -->
                     <div class="profile__agent mb-30">
@@ -540,20 +227,6 @@
 
                     </div>
                     <!-- END PROFILE AGENT -->
-                    <div class="download mb-0">
-                        <h5 class="text-center text-capitalize">Property Attachments</h5>
-                        <div class="download__item">
-                            <a href="#" target="_blank"><i class="fa fa-file-pdf-o mr-3"
-                                    aria-hidden="true"></i>Download Document.Pdf</a>
-                        </div>
-                        <div class="download__item">
-                            <a href="#" target="_blank"><i class="fa fa-file-word-o mr-3"
-                                    aria-hidden="true"></i>Presentation
-                                2016-17.Doc</a>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
             <div class="col-lg-8">
@@ -664,121 +337,11 @@
                         </div>
                         <!-- END FEATURES -->
 
-                        <!-- FLOR PLAN -->
-                       {{--  <div class="single__detail-features">
-                            <h6 class="text-capitalize detail-heading">floor plan</h6>
-                            <!-- FLOR PLAN IMAGE -->
-                            <div id="accordion" class="floorplan" role="tablist">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingOne">
-                                        <a class="text-capitalize" data-toggle="collapse" href="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            first floor <span class="badge badge-light rounded p-1 ml-2">460 sq
-                                                ft</span>
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" role="tabpanel"
-                                        aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <figure>
-                                                <img src="/frontend/images/floorplan.jpg" alt="" class="img-fluid">
-                                            </figure>
-
-                                            Excepteur sint ocaec at cupdatat proident suntin culpa qui officia
-                                            deserunt mol anim id esa laborum
-                                            perspiciat.
-                                            Duis aute irure dolor reprehenderit in voluptate velit essle cillum
-                                            dolore eu fugiat nulla pariatur.
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingTwo">
-
-                                        <a class="collapsed text-capitalize" data-toggle="collapse"
-                                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            second floor <span class="badge badge-light rounded p-1 ml-2">460 sq
-                                                ft</span>
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <figure>
-                                                <img src="/frontend/images/floorplan2.jpg" alt="" class="img-fluid">
-                                            </figure>
-                                            They offers a host of logistic management services and supply chain . We
-                                            provide innovative solutions
-                                            with the best. tempor incididunt ut labore et dolor empor tempor
-                                            incididunt innovative solutions
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingThree">
-                                        <a class="collapsed text-capitalize" data-toggle="collapse"
-                                            href="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            garage <span class="badge badge-light rounded p-1 ml-2">460 sq ft</span>
-                                        </a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <figure>
-                                                <img src="/frontend/images/floorplan3.jpg" alt="" class="img-fluid">
-                                            </figure>
-                                            They offers a host of logistic management services and supply chain . We
-                                            provide innovative solutions
-                                            with the best. tempor incididunt ut labore et dolor empor tempor
-                                            incididunt innovative solutions
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div> --}}
-                        <!-- END FLOR PLAN -->
-                        <div class="single__detail-features">
-                            <h6 class="text-capitalize detail-heading">property video</h6>
-                            <div class="single__detail-features-video">
-                                <figure class=" mb-0">
-                                    <div class="home__video-area text-center">
-                                        <img src="/frontend/images/gallery.jpg" alt="" class="img-fluid">
-                                        <a href="https://youtu.be/dQtLx6dsbcI" class="play-video-1 ">
-                                            <i class="icon fa fa-play text-white"></i>
-                                        </a>
-                                    </div>
-
-                                </figure>
-                            </div>
-                        </div>
-
-
                         <!-- LOCATION -->
                         <div class="single__detail-features">
                             <h6 class="text-capitalize detail-heading">location</h6>
                             <!-- FILTER VERTICAL -->
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-map-location-tab" data-toggle="pill"
-                                        href="#pills-map-location" role="tab" aria-controls="pills-map-location"
-                                        aria-selected="true">
-                                        <i class="fa fa-map-marker"></i>
-                                    </a>
-                                </li>
-                                {{-- <li class="nav-item">
-                                    <a class="nav-link" id="pills-street-view-tab" data-toggle="pill"
-                                        href="#pills-street-view" role="tab" aria-controls="pills-street-view"
-                                        aria-selected="false">
-                                        <i class="fa fa-street-view "></i></a>
-                                </li> --}}
-
-
-                            </ul>
+                           
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-map-location" role="tabpanel"
                                     aria-labelledby="pills-map-location-tab">
@@ -803,15 +366,6 @@
                         </div>
                         <!-- END LOCATION -->
 
-                        <!-- PROPERTY VIEWS -->
-                        <div class="single__detail-features">
-                            <h6 class="text-capitalize detail-heading">property views</h6>
-                            <!-- CANVAS -->
-                            <div class="wrapper">
-                                <canvas id="myChart" class="chart"></canvas>
-                            </div>
-                        </div>
-                        <!-- END PROPERTY VIEWS -->
 
                         <!-- NEARBY -->
                         {{-- <div class="single__detail-features">

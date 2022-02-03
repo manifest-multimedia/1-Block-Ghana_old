@@ -44,7 +44,7 @@
     object-fit: cover;
     height: auto;
     width: 90px;
-    padding: 0 10px;
+    padding: 10 0px;
 }
 
 .fixed-top .navbar-brand img:last-child, .navbar-custom .navbar-brand img:last-child {
@@ -57,7 +57,7 @@
    /*  background: linear-gradient(90deg, #0a0494 0%, #3454d1 61%, #009fff 100%); */
    background: linear-gradient(227deg, #dda04a, #b78746) !important;
     padding: 0;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 .btn-primary {
@@ -273,3 +273,51 @@ a,.tabs__custom-v2 .nav-pills .list-inline-item .title-text {
 section.home__message {
     background: #eee;
 }
+
+
+.topbar .topbar-left .topbar-text {
+    color: #fff;
+    padding: 0px 0;
+    font-size: 13px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 30px;
+}
+
+.topbar .topbar-right {
+    text-align: right;
+    line-height: 15px;
+}
+
+.topbar .topbar-right .topbar-link {
+    display: inline-table;
+    padding: 0px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary.nice-select.open:not(:disabled):not(.disabled), .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle,.download__item:hover {
+    color: #fff;
+    background-color: #dfaa15;
+    border-color: #dfaa15;
+}
+
+.ribbon.text-capitalize {
+    display: none;
+}
+
+
+.slider__image__detail-large-two .slider__image__detail-large-one img, .slider__image__detail-large-two .single__detail-features-video figure .home__video-area img{
+    height: 640px;
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+}
+
+
+a.play-video-12 {
+    position: absolute;
+    top: 50px;
+}
+
