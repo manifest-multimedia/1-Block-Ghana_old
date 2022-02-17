@@ -8,7 +8,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active banner-max-height">
-                    <img class="d-block w-100" src="frontend/images/slider/jum1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="/frontend/images/01.jpg" alt="First slide">
                     <div class="carousel-caption banner__slide-overlay d-flex h-100">
                         <div class="carousel__content">
                             <div class="container">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="carousel-item banner-max-height">
-                    <img class="d-block w-100" src="frontend/images/slider/jum2.png" alt="Second slide">
+                    <img class="d-block w-100" src="frontend/images/bg19.jpg" alt="Second slide">
                     <div class="carousel-caption banner__slide-overlay d-flex h-100">
                         <div class="carousel__content">
                             <div class="container">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="carousel-item banner-max-height">
-                    <img class="d-block w-100" src="frontend/images/slider/jum3.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="frontend/images/2.jpg" alt="Third slide">
                     <div class="carousel-caption banner__slide-overlay d-flex h-100">
                         <div class="carousel__content">
                             <div class="container">

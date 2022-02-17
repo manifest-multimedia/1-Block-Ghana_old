@@ -3,52 +3,49 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="header">
-                        <h2><strong>Basic</strong> Information <small>Description text here...</small> </h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h2><strong>Property</strong> Information  </h2>
                     </div>
                     <div class="body">
                         <div class="row clearfix">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Property Name">
+                                    <x-form.label value="{{ __('Property Name') }}" />
+                                    <x-form.input name="property_name" placeholder="Property Name" value="{{$user->business->name ?? ''}}" />
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Property Location">
+                                    <x-form.label value="{{ __('ID') }}" />
+                                    <x-form.input name="property_id" placeholder="RV151" value="{{$user->business->type ?? ''}}" />
                                 </div>
                             </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <x-form.label value="{{ __('Property Type') }}" />
+                                    <x-form.input name="property_type"  placeholder="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <x-form.label value="{{ __('Year Built') }}" />
+                                    <x-form.input type="date" name="property_year_built" placeholder="" />
+                                </div>
+                            </div>
+
+
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <div class="form-line">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Property Description"></textarea>
-                                    </div>
+                                    <x-form.label value="{{ __('Property Description') }}" />
+                                    <x-form.textarea name="property_description" type="email" placeholder="Description about the property" />
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="card">
+
                     <div class="header">
-                        <h2><strong>Property</strong> For <small>Description text here...</small> </h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                        <h2><strong>Property</strong> Features </h2>
                     <div class="body">
                         <div class="row clearfix">
                             <div class="col-sm-6">
@@ -63,90 +60,44 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Price / Rent">
+                                    <x-form.label value="{{ __('Price') }}" />
+                                    <x-form.input name="property_price" placeholder="GHS450,000" value="{{$user->business->type ?? ''}}" />
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-3">
                                 <div class="form-group">
-                                    <textarea rows="4" class="form-control no-resize" placeholder="Property Address"></textarea>
+                                    <x-form.label value="{{ __('Size') }}" />
+                                    <x-form.input name="property_size" placeholder="458 SqFt" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <x-form.label type="number" value="{{ __('Number of Bedrooms') }}" />
+                                    <x-form.input name="property_bedroom"  placeholder="0" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <x-form.label type="number" value="{{ __('Number of Kitchen') }}" />
+                                    <x-form.input name="property_kitchen"  placeholder="0" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <x-form.label type="number" value="{{ __('Number of Bathrooms') }}" />
+                                    <x-form.input name="property_bathroom"  placeholder="0" />
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix">
-                            <div class="col-lg-3 col-dm-3 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Bedrooms">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-dm-3 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Square ft">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-dm-3 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Car Parking">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-dm-3 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Year Built">
-                                </div>
-                            </div>
-                        </div>                        
+
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="header">
-                        <h2><strong>Dimensions</strong> <small>Description text here...</small> </h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-line">
-                                    <input type="text" class="form-control" placeholder="Dining Room">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-line">
-                                    <input type="text" class="form-control" placeholder="Kitchen">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-line">
-                                    <input type="text" class="form-control" placeholder="Living Room">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Master Bedroom">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Bedroom 2">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Other Room">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="header">
-                        <h2><strong>General</strong> Amenities<small>Description text here...</small> </h2>
+                        <h2><strong>General</strong> Amenities </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
                                 <ul class="dropdown-menu pull-right">
@@ -210,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix">                            
+                        <div class="row clearfix">
                             <div class="col-sm-12">
                                 <form action="/" id="frmFileUpload" class="dropzone m-b-15 m-t-15" method="post" enctype="multipart/form-data">
                                     <div class="dz-message">
@@ -222,10 +173,33 @@
                                     </div>
                                 </form>
                             </div>
-                            
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h2><strong>General</strong> Amenities </h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
+                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
+                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+
                             <div class="col-sm-12">
                                 <button type="submit" class="btn btn-primary btn-round">Submit</button>
-                                <button type="submit" class="btn btn-default btn-round btn-simple">Cancel</button>
+
                             </div>
                         </div>
                     </div>

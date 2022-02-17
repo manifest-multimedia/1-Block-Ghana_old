@@ -193,6 +193,9 @@
                                         <li><a href="javascript:void(0)"><i class=" fa fa-building mr-1"></i>
                                                 Company name</a>
                                         </li>
+                                        <li><a href="javascript:void(0)"><i class=" fa fa-globe mr-1"></i>
+                                                www.website.com</a>
+                                        </li>
                                         <li> <a href="javascript:void(0)" class="">View My Listing</a>
                                         </li>
                                     </ul>
@@ -341,7 +344,7 @@
                         <div class="single__detail-features">
                             <h6 class="text-capitalize detail-heading">location</h6>
                             <!-- FILTER VERTICAL -->
-                           
+
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-map-location" role="tabpanel"
                                     aria-labelledby="pills-map-location-tab">

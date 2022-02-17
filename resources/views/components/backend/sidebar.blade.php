@@ -10,7 +10,7 @@
                         <h4>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</h4>
                         <small>{{Str::ucfirst(Auth::user()->role)}}</small>
                     @endauth
-                        
+
                     </div>
                     {{-- <a href="#" title="Events"><i class="zmdi zmdi-calendar"></i></a>
                     <a href="#" title="Inbox"><i class="zmdi zmdi-email"></i></a>
@@ -46,8 +46,8 @@
             </li><li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-outline"></i><span>Agents</span> </a>
                 <ul class="ml-menu">
                     <li><a href="#">All Agents</a></li>
-                    <li><a href="#">Add Agent</a></li>
-                    <li><a href="#">Agent Profile</a></li>
+                    <li><a href="{{ route('agent.add') }}">Add Agent</a></li>
+                    <li><a href="{{ route('agent.profile')}}">Agent Profile</a></li>
                 </ul>
             </li>
         </div>

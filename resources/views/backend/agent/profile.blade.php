@@ -2,7 +2,7 @@
 
     <!-- Main Content -->
 <section class="content agent">
-    <x-backend.breadcrumb page="Agents" menu="Add Agent" />
+    <x-backend.breadcrumb page="Agents" menu="Agent Profile" />
     <div class="container-fluid">
         <div class="row clearfix">
             <div class="col-lg-12">
@@ -22,49 +22,45 @@
                             </li>
                         </ul> --}}
                     </div>
+
                     <div class="body">
+                        <form action="{{ route('agent.update', $user->id)}}"></form>
                         <div class="row clearfix mb-3">
                             <div class="col-sm-6">
                                 <x-form.label value="{{ __('First Name') }}" />
-                                <x-form.input name="firstname" placeholder="Firstname" />
+                                <x-form.input name="firstname" placeholder="Firstname" value="{{$user->firstname}}" readonly />
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <x-form.label value="{{ __('Last Name') }}" />
-                                    <x-form.input name="lastname" placeholder="Lastname" />
+                                    <x-form.input name="lastname" placeholder="Lastname" value="{{$user->lastname}}" readonly />
                                 </div>
                             </div>
 
                         </div>
 
                         <div class="row clearfix mb-3">
-                         <div class="col-sm-6">
+                            <div class="col-sm-6">
                                 <div class="form-group">
                                     <x-form.label value="{{ __('Phone Number') }}" />
-                                    <x-form.input name="phone" type="tel" placeholder="Phone Number" />
+                                    <x-form.input name="phone" type="tel" placeholder="Phone Number" value="{{$user->mobile}}" />
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                <x-form.label value="{{ __('Date of Birth') }}" />
-                                    <x-form.input name="dob" type="date" placeholder="Date of Birth" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row clearfix mb-3">
-                            <div class="col-sm-6">
-                                <x-form.label value="{{ __('Gender') }}" />
-                                <x-form.input name="gender" placeholder="Gender" />
-                            </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <x-form.label value="{{ __('Email Address') }}" />
-                                    <x-form.input name="email" type="email" placeholder="Email Address" />
+                                    <x-form.input name="email" type="email" placeholder="Email Address" value="{{$user->email}}" />
                                 </div>
                             </div>
+
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary btn-round">Update</button>
+
+                            </div>
                         </div>
+
+
                       {{--   <div class="row clearfix">
                             <div class="col-sm-12">
                                 <form action="/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
@@ -112,13 +108,13 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <x-form.label value="{{ __('Business Name') }}" />
-                                    <x-form.input name="business" placeholder="Business name" />
+                                    <x-form.input name="business" placeholder="Business name" value="{{$user->business->name ?? ''}}" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <x-form.label value="{{ __('Business Type') }}" />
-                                    <x-form.input name="business_type" placeholder="Business Type" />
+                                    <x-form.input name="business_type" placeholder="Business Type" value="{{$user->business->type ?? ''}}" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -134,8 +130,20 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary btn-round">Submit</button>
-                                <button type="submit" class="btn btn-default btn-round btn-simple">Cancel</button>
+                                <div class="form-group">
+                                    <x-form.label value="{{ __('Business Website') }}" />
+                                    <x-form.input name="business_website" type="email" placeholder="www.domain.com" />
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <x-form.label value="{{ __('Business Description') }}" />
+                                    <x-form.textarea name="business_description" type="email" placeholder="Tell us about your business" />
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary btn-round">Update</button>
+
                             </div>
                         </div>
                     </div>

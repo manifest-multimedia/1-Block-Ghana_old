@@ -17,8 +17,10 @@ class CreateBusinessesTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('category_id');
-            $table->string('name');
-            $table->string('registration_number');
+            $table->string('name')->nullable();
+            $table->string('type')->nullable();
+            $table->string('email')->unique()->nullable();
+            $table->string('mobile')->nullable();
             $table->timestamps();
         });
     }

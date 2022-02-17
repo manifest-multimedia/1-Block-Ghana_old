@@ -8,7 +8,7 @@
                 </h2>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
-                <button class="btn btn-primary btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
+                <button class="float-right btn btn-primary btn-icon btn-round hidden-sm-down m-l-10" type="button">
                     <i class="zmdi zmdi-plus"></i>
                 </button>
                 <ul class="breadcrumb float-md-right">
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row clearfix">
+        <div class="clearfix row">
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="body">
@@ -70,14 +70,14 @@
             </div>
 
         </div>
-        <div class="row clearfix">
+        <div class="clearfix row">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="header">
                         <h2><strong>Visitors</strong></h2>
                         <ul class="header-dropdown">
                             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right slideUp float-right">
+                                <ul class="float-right dropdown-menu dropdown-menu-right slideUp">
                                     <li><a href="javascript:void(0);">Edit</a></li>
                                     <li><a href="javascript:void(0);">Delete</a></li>
                                     <li><a href="javascript:void(0);">Report</a></li>
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <div class="row text-center">
+                        <div class="text-center row">
                             <div class="col-sm-3 col-6">
                                 <h4 class="m-t-0">106 <i class="zmdi zmdi-account col-green"></i></h4>
                                 <p class="text-muted"> Today's</p>
@@ -112,8 +112,8 @@
                 </div>
             </div>
         </div>
-        <div class="row clearfix">
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+        <div class="clearfix row">
+            <div class="text-center col-lg-3 col-md-6 col-sm-12">
                 <div class="card tasks_report">
                     <div class="body">
                         <input type="text" class="knob dial2" value="66" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#4CAF50" readonly>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <div class="text-center col-lg-3 col-md-6 col-sm-12">
                 <div class="card tasks_report">
                     <div class="body">
                         <input type="text" class="knob dial2" value="26" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#7b69ec" readonly>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <div class="text-center col-lg-3 col-md-6 col-sm-12">
                 <div class="card tasks_report">
                     <div class="body">
                         <input type="text" class="knob dial3" value="76" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#f9bd53" readonly>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <div class="text-center col-lg-3 col-md-6 col-sm-12">
                 <div class="card tasks_report">
                     <div class="body">
                         <input type="text" class="knob dial4" value="88" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#00adef" readonly>
@@ -153,243 +153,6 @@
                 </div>
             </div>
         </div>
-        <div class="row clearfix">
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="header">
-                        <h2><strong>Free</strong> Subscribers<small ></small></h2>
-                        <ul class="header-dropdown">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                    <li><a href="javascript:void(0);">View All</a></li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row stats-report">
-                            <div class="col-4">
-                                <p class="m-b-0">Overall</p>
-                                <b class="col-indigo">70.40%</b>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-0">Montly</p>
-                                <b class="col-indigo">25.80%</b>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-0">Day</p>
-                                <b class="col-indigo">12.50%</b>
-                            </div>
-                        </div>
-                        <div class="sparkline m-t-20" data-type="line" data-spot-Radius="1" data-highlight-Spot-Color="rgb(63, 81, 181)" data-highlight-Line-Color="#222"
-                        data-min-Spot-Color="rgb(233, 30, 99)" data-max-Spot-Color="rgb(63, 81, 181)" data-spot-Color="rgb(63, 81, 181, 0.7)"
-                        data-offset="90" data-width="100%" data-height="80px" data-line-Width="1" data-line-Color="rgb(63, 81, 181, 0.7)"
-                        data-fill-Color="rgba(0, 0, 0, 0.1)"> 2,1,3,5,6,3,2,7,5,2 </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="header">
-                        <h2><strong>Intermediate</strong> Subscribers<small></small></h2>
-                        <ul class="header-dropdown">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                    <li><a href="javascript:void(0);">View All</a></li>
-
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row stats-report">
-                          <div class="col-4">
-                            <p class="m-b-0">Overall</p>
-                            <b class="col-blue-grey">80.40%</b></div>
-                          <div class="col-4">
-                            <p class="m-b-0">Montly</p>
-                            <b class="col-blue-grey">13.00%</b></div>
-                          <div class="col-4">
-                            <p class="m-b-0">Day</p>
-                            <b class="col-blue-grey">9.50%</b></div>
-                        </div>
-                        <div class="sparkline m-t-20" data-type="bar" data-width="97%" data-height="80px" data-bar-Width="16" data-bar-Spacing="7" data-bar-Color="rgba(0, 0, 0, 0.1)"> 6,7,8,9,10,5,13,18,21,7,9,11,12,5 </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="header">
-                        <h2><strong>Premium</strong> Subscribers<small></small></h2>
-                        <ul class="header-dropdown">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                    <li><a href="javascript:void(0);">View All</a></li>
-
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row stats-report">
-                            <div class="col-4">
-                                <p class="m-b-0">Overall</p>
-                                <b class="col-amber">45.40%</b>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-0">Montly</p>
-                                <b class="col-amber">68.80%</b>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-0">Day</p>
-                                <b class="col-amber">14.50%</b>
-                            </div>
-                        </div>
-                        <div class="sparkline m-t-20" data-type="line" data-spot-Radius="1" data-highlight-Spot-Color="rgb(255, 193, 7)" data-highlight-Line-Color="#222"
-                        data-min-Spot-Color="rgb(233, 30, 99)" data-max-Spot-Color="rgb(255, 193, 7)" data-spot-Color="rgb(255, 193, 7, 0.7)"
-                        data-offset="90" data-width="100%" data-height="80px" data-line-Width="1" data-line-Color="rgb(255, 193, 7, 0.7)"
-                        data-fill-Color="rgba(0, 0, 0, 0.1)"> 2,1,3,5,6,3,2,7,5,2 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row clearfix">
-            <div class="col-lg-5 col-md-12">
-                <div class="card weather2">
-                    <div class="city-selected body l-parpl">
-                        <div class="row">
-                            <div class="info col-7">
-                                <div class="city"><span>City:</span> New York</div>
-                                <div class="night">Day - 12:07 PM</div>
-                                <div class="temp"><h2>34°</h2></div>
-                            </div>
-                            <div class="icon col-5">
-                                <img src="assets/images/weather/summer.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <table class="table table-striped m-b-0">
-                        <tbody>
-                            <tr>
-                            <td>Wind</td>
-                            <td class="font-medium">ESE 17 mph</td>
-                        </tr>
-                        <tr>
-                            <td>Humidity</td>
-                            <td class="font-medium">72%</td>
-                        </tr>
-                        <tr>
-                            <td>Pressure</td>
-                            <td class="font-medium">25.56 in</td>
-                        </tr>
-                        <tr>
-                            <td>Cloud Cover</td>
-                            <td class="font-medium">80%</td>
-                        </tr>
-                        <tr>
-                            <td>Ceiling</td>
-                            <td class="font-medium">25280 ft</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item text-center active">
-                                <div class="col-12">
-                                    <ul class="row days-list list-unstyled">
-                                        <li class="day col-4">
-                                            <p>Monday</p>
-                                            <img src="assets/images/weather/rain.svg" alt="">
-                                        </li>
-                                        <li class="day col-4">
-                                            <p>Tuesday</p>
-                                            <img src="assets/images/weather/cloudy.svg" alt="">
-                                        </li>
-                                        <li class="day col-4">
-                                            <p>Wednesday</p>
-                                            <img src="assets/images/weather/wind.svg" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="carousel-item text-center">
-                                <div class="col-12">
-                                    <ul class="row days-list list-unstyled">
-                                        <li class="day col-4">
-                                            <p>Thursday</p>
-                                            <img src="assets/images/weather/sky.svg" alt="">
-                                        </li>
-                                        <li class="day col-4">
-                                            <p>Friday</p>
-                                            <img src="assets/images/weather/cloudy.svg" alt="">
-                                        </li>
-                                        <li class="day col-4">
-                                            <p>Saturday</p>
-                                            <img src="assets/images/weather/summer.svg" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-12">
-                <div class="card">
-                    <ul class="row profile_state list-unstyled">
-                        <li class="col-lg-3 col-md-3 col-6">
-                            <div class="body">
-                                <i class="zmdi zmdi-eye col-amber"></i>
-                                <h4>2,365</h4>
-                                <span>Post View</span>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 col-6">
-                            <div class="body">
-                                <i class="zmdi zmdi-thumb-up col-blue"></i>
-                                <h4>365</h4>
-                                <span>Likes</span>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 col-6">
-                            <div class="body">
-                                <i class="zmdi zmdi-comment-text col-red"></i>
-                                <h4>65</h4>
-                                <span>Comments</span>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 col-6">
-                            <div class="body">
-                                <i class="zmdi zmdi-account text-success"></i>
-                                <h4>2,055</h4>
-                                <span>Profile Views</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="header">
-                        <h2><strong>Agents</strong></h2>
-                        <ul class="header-dropdown">
-                            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right slideUp float-right">
-                                    <li><a href="javascript:void(0);">Edit</a></li>
-                                    <li><a href="javascript:void(0);">Delete</a></li>
-                                    <li><a href="javascript:void(0);">Report</a></li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div id="m_area_chart2" style="height: 290px"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
     </div>
 </section>

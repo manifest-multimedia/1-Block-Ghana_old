@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PackagesController;
+use App\Http\Controllers\UserOTPController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,11 +42,18 @@ Route::get('/contact-us', function () {
     return view('frontend.contact');
 });
 
-Route::get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('backend.index');
-});
+})->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/add-agent', [UserController::class,'addAgent'])->name('add.agent');
+Route::middleware(['auth:sanctum', 'verified'])->get('/agent/add', [UserController::class,'addAgent'])->name('agent.add');
+
+
+Route::post('/agent/save', [UserController::class, 'postAgent']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/agent/profile', [UserController::class,'agentProfile'])->name('agent.profile');
+
+Route::middleware(['auth:sanctum', 'verified'])->post('/agent/profile', [UserController::class,'agentProfile'])->name('agent.update');
 
 Route::post('/signup-request', [AdminController::class,'signUpRequest'])->name('signup.request');
 
@@ -67,6 +76,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/property/add', function (
 
 Route::get('users', Crud::class);
 
-/* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('backend.index');
-})->name('dashboard'); */
+Route::get('forget-password', [UserOTPController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('send-agent-otp', [UserOTPController::class, 'submitAgentForm'])->name('send.agent.otp');
+Route::get('reset-password/{token}', [UserOTPController::class, 'showAgentResetPasswordForm'])->name('reset.password.get');
+Route::post('reset-password', [UserOTPController::class, 'submitAgentResetPasswordForm'])->name('reset.password.post');

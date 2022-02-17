@@ -63,7 +63,7 @@
                 {{-- <li class="nav-item"><a class="nav-link" href="/listing"> Listing</a></li> --}}
 
                 <li class="nav-item"><a class="nav-link" href="/contact-us"> Contact Us </a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> Ghana on Tapes </a></li>
+                
             </ul>
 
 
