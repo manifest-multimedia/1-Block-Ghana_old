@@ -63,14 +63,14 @@
                 {{-- <li class="nav-item"><a class="nav-link" href="/listing"> Listing</a></li> --}}
 
                 <li class="nav-item"><a class="nav-link" href="/contact-us"> Contact Us </a></li>
-                
+
             </ul>
 
 
             <!-- Search bar.// -->
             <ul class="navbar-nav">
                 <li>
-                    <a href="/register" class="btn btn-primary text-capitalize">
+                    <a href="/login" class="btn btn-primary text-capitalize">
                         <i class="mr-1 fa fa-plus-circle"></i> add listing</a>
                 </li>
             </ul>

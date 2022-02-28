@@ -25,16 +25,16 @@
 
                             </div>
 
-                            <div class="footer text-center">
+                            <div class="text-center footer">
                                 <button type="submit" class="btn l-cyan btn-square btn-lg btn-block waves-effect waves-light">SIGN IN</button>
-                                <h6 class="m-t-20 text-gray-600">
+                                <h6 class="text-gray-600 m-t-20">
                                     @if (Route::has('password.request'))
-                                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                                    <a class="text-sm text-gray-600 underline hover:text-gray-900" href="{{ route('password.request') }}">
                                         {{ __('Forgot your password?') }}
                                     </a>
                                     @endif
                             </h6>
-                            <h6 class="m-t-20 text-gray-600"><a class="link" href="{{ route('register')}}">NEW USER?</a></h6>
+                            <h6 class="text-gray-600 m-t-20"><a class="link" href="{{ route('register')}}">NEW AGENT?&nbsp;&nbsp; <u>SignUp Here</u></a></h6>
                             </div>
                         </form>
                     </div>

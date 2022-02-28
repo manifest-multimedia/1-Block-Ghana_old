@@ -2,7 +2,7 @@
 
 @props(['name'])
 
-<div class="input-group">
+<div class="input-group1">
     <select class="form-control" {{ $attributes->merge(['placeholder'=> '', 'type'=>'text','value'=>old($name)]) }} name="{{$name}}" required>
         <option value="">-- Gender --</option>
         <option value="10">Male</option>

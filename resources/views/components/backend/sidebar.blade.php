@@ -4,7 +4,7 @@
         <ul class="list">
             <li>
                 <div class="user-info">
-                    <div class="image"><a href="profile.html"><img src="assets/images/gabe.jpg" alt="User"></a></div>
+                    <div class="image"><a href="/profile"><img src="/assets/images/gabe.jpg" alt="User"></a></div>
                     <div class="detail">
                     @auth
                         <h4>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</h4>
@@ -24,8 +24,15 @@
             <li class="active open"><a href="/dashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Packages</span> </a>
                 <ul class="ml-menu">
-                    <li><a href="/packages">List Packages</a></li>
-                    <li><a href="/package/add">Create Package</a></li>
+                    <li><a href="{{route('package.list')}}">List Packages</a></li>
+                    <li><a href="{{ route('package.add')}}">Create Package</a></li>
+                </ul>
+            </li>
+
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Amenities</span> </a>
+                <ul class="ml-menu">
+                    <li><a href="/amenities">List Amenities</a></li>
+                    <li><a href="/amenities/add">Add Amenities</a></li>
                 </ul>
             </li>
             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Properties</span> </a>
@@ -45,7 +52,7 @@
                 </ul>
             </li><li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-outline"></i><span>Agents</span> </a>
                 <ul class="ml-menu">
-                    <li><a href="#">All Agents</a></li>
+                    <li><a href="{{ route('agent.view') }}">All Agents</a></li>
                     <li><a href="{{ route('agent.add') }}">Add Agent</a></li>
                     <li><a href="{{ route('agent.profile')}}">Agent Profile</a></li>
                 </ul>
@@ -53,27 +60,9 @@
         </div>
     </div>
 
-    {{-- <div class="menu">
+    <div class="menu">
         <div class="list">
-            <li class="header">Extra</li>
-            <li>
-                <div class="progress-container progress-primary m-t-10">
-                    <span class="progress-badge">Traffic this Month</span>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;">
-                            <span class="progress-value">67%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-container progress-info">
-                    <span class="progress-badge">Server Load</span>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
-                            <span class="progress-value">86%</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
+            <li class="open"><a href="/"  style="color: #f96332"><i class="zmdi zmdi-arrow-left"></i><span>BACK TO HOMEPAGE</span></a></li>
         </ul>
-    </div> --}}
+    </div>
 </aside>

@@ -15,9 +15,14 @@ class CreateBusinessesTable extends Migration
     {
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            $table->foreignId('category_id');
+            $table->foreignId('user_id')->constrained('users')->onUpdate('cascade')
+            ->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onUpdate('cascade')
+            ->onDelete('cascade');
+            $table->foreignId('category_id')->constrained('categories')->onUpdate('cascade')->onDelete('set null');
+            $table->foreignId('package_id')->constrained('packages')->onUpdate('cascade')->onDelete('set null');
             $table->string('name')->nullable();
+            $table->longText('description')->nullable();
             $table->string('type')->nullable();
             $table->string('email')->unique()->nullable();
             $table->string('mobile')->nullable();

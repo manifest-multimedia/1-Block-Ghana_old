@@ -4,15 +4,15 @@
             <div class="mx-auto col-md-8 col-lg-6">
                 <div class="title__head">
                     <h2 class="text-center text-capitalize">
-                        popular cities
+                        popular Locations
                     </h2>
-                    <p class="text-center text-capitalize">Find Properties In These Cities.</p>
+                    <p class="text-center text-capitalize">Find Properties In These Locations.</p>
                 </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <!-- CARD IMAGE -->
                 <a href="#">
                     <div class="card__image-hover-style-v3">
@@ -28,7 +28,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <!-- CARD IMAGE -->
                 <a href="#">
                     <div class="card__image-hover-style-v3">
@@ -44,7 +44,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <!-- CARD IMAGE -->
                 <a href="#">
                     <div class="card__image-hover-style-v3">
@@ -60,7 +60,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3">
+           {{--  <div class="col-md-6 col-lg-3">
                 <!-- CARD IMAGE -->
                 <a href="#">
                     <div class="card__image-hover-style-v3">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

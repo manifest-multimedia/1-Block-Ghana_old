@@ -21,13 +21,13 @@
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
-
+    <link rel="icon" href="favicon.png" type="image/x-icon"> <!-- Favicon-->
     <link rel="manifest" href="site.webmanifest">
     <!-- favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="icon.png">
     <meta name="theme-color" content="#3454d1">
     <link href="frontend/css/styles.css" rel="stylesheet">
-    <link href="frontend/css/custom.css" rel="stylesheet">
+    <link href="/frontend/css/custom.css" rel="stylesheet">
 </head>
 
 <body>

@@ -26,8 +26,10 @@ class UserOTPController extends Controller
        */
       public function submitAgentForm(Request $request)
       {
+         // dd($request);
           $request->validate([
               'email' => 'required|email|unique:users,email',
+              'business_name' => 'required|unique:businesses,',
           ]);
 
           $token = Str::random(64);
@@ -66,6 +68,7 @@ class UserOTPController extends Controller
                 'mobile' => $request->business_phone,
                 'email' => $request->business_email,
                 'category_id' => 2,
+                'package_id' => $request->package_id,
             ]);
         }
 
@@ -77,7 +80,7 @@ class UserOTPController extends Controller
             $message->subject('Agent Setup Account');
         });
 
-          return back()->with('message', 'Registration Link has been sent to the agent email');
+          return back()->with('success', 'Registration Link has been sent to the agent email');
       }
       /**
        * Write code on Method
@@ -112,7 +115,7 @@ class UserOTPController extends Controller
           if(!$updatePassword){
               return back()->withInput()->with('message', 'Invalid token!');
           }
-         
+
           $user = User::where('email', $request->email)
                       ->update(['password' => Hash::make($request->password)]);
 

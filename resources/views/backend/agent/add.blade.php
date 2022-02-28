@@ -20,9 +20,12 @@
                     <div class="header">
                         <h2><strong>Personal</strong> Information</h2>
                     </div>
-                    
+
                     <div class="body">
-                        {{-- <form action="/agent/save" method="post"> --}}
+                        @if ($packages->isEmpty())
+                        <p><strong>You need to first add your Packages before an agent can be added to this platform</strong></p>
+                        <span><a href="{{route('package.add')}}">Click here</a> to add a new package</span>
+                        @else
                         <form action="{{ route('send.agent.otp') }}" method="post">
                             @csrf
                             <div class="clearfix mb-3 row">
@@ -64,11 +67,21 @@
                                     <div class="form-group">
                                         <x-form.label value="{{ __('Email Address') }}" />
                                         <x-form.input name="email" type="email" placeholder="Email Address" />
-                                        @if ($errors->has('email'))
-                                      <span class="text-danger">{{ $errors->first('email') }}</span>
-                                  @endif
                                     </div>
                                 </div>
+                            </div>
+                            <div class="clearfix mb-3 row">
+                                <div class="col-sm-6">
+                                    <x-form.label value="{{ __('Package Type') }}" />
+                                    <select class="form-control" name="package_id" id="">
+                                        @foreach ($packages as $package)
+                                        <option value="{{$package->id}}">{{$package->name}}</option>
+                                        @endforeach
+
+                                    </select>
+                                </div>
+
+
                             </div>
 
                             <div class="clearfix mb-3 row">
@@ -77,6 +90,8 @@
                                 </div>
                             </div>
                         </form>
+                        @endif
+
                     </div>
                 </div>
             </div>

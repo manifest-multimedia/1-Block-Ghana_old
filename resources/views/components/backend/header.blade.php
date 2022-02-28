@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="col-12">
+    <L;Pdiv class="col-12">
         <div class="navbar-header">
             <a href="javascript:void(0);" class="bars"></a>
             <a class="navbar-brand" href="{{ route('dashboard')}}"><img src="{{asset('assets/images/logo.png')}}" width="50" alt="1 Block Ghana"><span class="m-l-10">1 Block Ghana</span></a>

@@ -2,27 +2,28 @@
 
     <!-- Main Content -->
 <section class="content agent">
-    <x-backend.breadcrumb page="Packages" menu="Packages" link="{{route('package.add')}}" />
+    <x-backend.breadcrumb page="Packages" menu="Agents" link="{{route('agent.add')}}" />
     <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="card">
             <div class="header">
-                <h2><strong></strong> Packages</h2>
+                <h2><strong></strong> Agents</h2>
 
             </div>
 
             <div class="body">
                 <div class="table-responsive social_media_table">
-                    @if (!$packages->isEmpty())
+                    @if (!$agents->isEmpty())
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>No.</th>
+                                <th>Pic</th>
                                 <th>Name</th>
-                                <th>Type</th>
-                                <th>Listing Limit</th>
-                                <th>Image Upload</th>
-                                <th>Video Upload</th>
-                                <th>Video limit</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Business Name</th>
+                                <th>Package</th>
+
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -31,7 +32,7 @@
                             $count = 0;
                             @endphp
 
-                            @foreach ($packages as $package)
+                            @foreach ($agents as $agent)
                              @php $count++;@endphp
                             <tr>
                                 <td><span class="social_icon linkedin">{{$count}}</span>
@@ -39,10 +40,13 @@
                                 <td><span class="list-name">{{$package->name}}</span>
                                 </td>
                                 <td>{{$package->type}}</td>
-                                <td>{{$package->listing_limit}} listing</td>
-                                <td>{{$package->image_upload_limit}} pictures</td>
-                                <td>{{$package->video_upload_limit}} video</td>
-                                <td>{{$package->video_length_limit}} seconds</td>
+                                <td>Image</td>
+                                <td>{{$agent->firstname}} {{$agent->lastname}}</td>
+                                <td>{{$agent->email}}</td>
+                                <td>{{$agent->mobile}}</td>
+                                <td>{{$agent->business->name}}</td>
+                                <td>{{$agent->business->package}}</td>
+
 
                                 <td>
                                     <a href="{{route('package.edit',['id'=>$package->id])}}"><button class="badge badge-success">Edit</button></a>

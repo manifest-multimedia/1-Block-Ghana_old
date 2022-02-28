@@ -327,3 +327,10 @@ a.play-video-12 {
    color: red;
   }
 
+  .wrapper__footer .widget__footer .link__category-two-column ul {
+    -moz-columns: 1;
+    columns: 1;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 0;
+}

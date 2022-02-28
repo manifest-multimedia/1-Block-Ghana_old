@@ -2,7 +2,7 @@
                 <div class="card">
                     <div class="header">
                         <h2><strong></strong> Packages</h2>
-                     
+
                     </div>
                     <div class="body">
                         <div class="table-responsive social_media_table">
@@ -11,7 +11,7 @@
                                     <tr>
                                         <th>No.</th>
                                         <th>Name</th>
-                                        <th>Type</th>                                                                                
+                                        <th>Type</th>
                                         <th>Listing Limit</th>
                                         <th>Image Upload</th>
                                         <th>Video Upload</th>
@@ -20,22 +20,27 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @forelse ($packages as $package)
                                     <tr>
                                         <td><span class="social_icon linkedin">1</span>
                                         </td>
-                                        <td><span class="list-name">Basic</span>
+                                        <td><span class="list-name">$package->name</span>
                                         </td>
                                         <td>Free</td>
                                         <td>5 listing</td>
                                         <td>9 pictures</td>
                                         <td>1 video</td>
                                         <td>120 seconds</td>
-																				
+
                                         <td>
                                             <span class="badge badge-success">Update</span>
                                             <span class="badge badge-danger">Delete</span>
                                         </td>
                                     </tr>
+                                    @empty
+                                    <p>No packages listed</p>
+                                    @endforelse
+
                                     <tr>
                                         <td><span class="social_icon twitter-table">2</i></span>
                                         </td>

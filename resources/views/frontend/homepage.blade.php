@@ -92,7 +92,7 @@
 
                              <li> <b><i class="fa fa-phone-square"></i></b><span>+44 7393 354293</span> </li>
                              <li> <b><i class="fa fa-headphones"></i></b><span>support@1blockghana.com</span> </li>
-                             <li> <b><i class="fa fa-clock-o"></i></b><span>Mon - Sun / 9:00AM - 8:00PM</span> </li>
+
                          </ul>
                      </div>
 
@@ -100,21 +100,21 @@
                  <!-- END ADDRESS -->
 
                  <!-- QUICK LINKS -->
-                 <div class="col-md-4">
+                 <div class="col-md-2">
                      <div class="widget__footer">
                          <h4 class="footer-title">Quick Links</h4>
                          <div class="link__category-two-column">
                              <ul class="list-unstyled ">
                                  <li class="list-inline-item">
-                                     <a href="#">Commercial</a>
+                                     <a href="#">Home</a>
                                  </li>
                                  <li class="list-inline-item">
-                                     <a href="#">business</a>
+                                     <a href="#">About Us</a>
                                  </li>
                                  <li class="list-inline-item">
-                                     <a href="#">House</a>
+                                     <a href="#">Contact Us</a>
                                  </li>
-                                 <li class="list-inline-item">
+                                 {{-- <li class="list-inline-item">
                                      <a href="#">Residential</a>
                                  </li>
 
@@ -146,7 +146,60 @@
                                  </li>
                                  <li class="list-inline-item">
                                      <a href="#">Beach Pasadena</a>
+                                 </li> --}}
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- END QUICK LINKS -->
+                 <!-- Categories LINKS -->
+                 <div class="col-md-2">
+                     <div class="widget__footer">
+                         <h4 class="footer-title">Quick Links</h4>
+                         <div class="link__category-two-column">
+                             <ul class="list-unstyled ">
+                                 <li class="list-inline-item">
+                                     <a href="#">Home</a>
                                  </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">About Us</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Contact Us</a>
+                                 </li>
+                                 {{-- <li class="list-inline-item">
+                                     <a href="#">Residential</a>
+                                 </li>
+
+                                 <li class="list-inline-item">
+                                     <a href="#">Residential Tower</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Beverly Hills</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Los angeles</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">The beach</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Property Listing</a>
+                                 </li>
+
+                                 <li class="list-inline-item">
+                                     <a href="#">Clasic</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Modern Home</a>
+                                 </li>
+
+                                 <li class="list-inline-item">
+                                     <a href="#">Luxury</a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                     <a href="#">Beach Pasadena</a>
+                                 </li> --}}
                              </ul>
                          </div>
                      </div>
